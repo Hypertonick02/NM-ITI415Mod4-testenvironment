@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=1920 height=1080 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -55,9 +55,9 @@
       var loaderUrl = buildUrl + "/NM-ITI415Mod4-testenvironment.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/NM-ITI415Mod4-testenvironment.data.gz",
-        frameworkUrl: buildUrl + "/NM-ITI415Mod4-testenvironment.framework.js.gz",
-        codeUrl: buildUrl + "/NM-ITI415Mod4-testenvironment.wasm.gz",
+        dataUrl: buildUrl + "/NM-ITI415Mod4-testenvironment.data",
+        frameworkUrl: buildUrl + "/NM-ITI415Mod4-testenvironment.framework.js",
+        codeUrl: buildUrl + "/NM-ITI415Mod4-testenvironment.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Ver6.0-BIRP",
@@ -98,8 +98,8 @@
 
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = "1920px";
+        canvas.style.height = "1080px";
       }
 
       document.querySelector("#unity-loading-bar").style.display = "block";
